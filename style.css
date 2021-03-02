@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.panel {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: column;
+  background-size: cover;
+  transition: flex 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.panel1 {
+  background-image: url(https://unsplash.com/photos/bBF9e2UUh88/download?force=true&w=1920);
+}
+.panel2 {
+  background-image: url(https://unsplash.com/photos/T3jvNXWWpy0/download?force=true&w=1920);
+}
+.panel3 {
+  background-image: url(https://images.unsplash.com/photo-1601163130717-627cde53c1de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+}
+.panel4 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1d/Miniaturk_009.jpg);
+}
+.panel5 {
+  background-image: url(https://unsplash.com/photos/TTVzWejVCRk/download?force=true&w=1920);
+}
+.panel.active {
+  flex: 5;
+}
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
